@@ -61,7 +61,7 @@
     </style>
 </head>
 <body>
-    <form action="procesar-compra.php" method="post" onsubmit="return validarFormulario()">
+    <form action="procesarcompra.php" method="post" onsubmit="return validarFormulario()">
         <h1>Compra en El Tornillo Feliz</h1>
         <label for="producto">Producto:</label>
         <select id="producto" name="producto" required>
