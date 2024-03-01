@@ -9,7 +9,7 @@
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
-            background-image: url('images.jpg');
+            background-image: url('ferre.jpg.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             margin: 0;
