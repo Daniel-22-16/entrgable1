@@ -55,8 +55,8 @@
 <body>
     <form action="procesaranulacion.php" method="post" onsubmit="return validarFormulario()">
         <h1>Anular Compra en El Tornillo Feliz</h1>
-        <label for="id_compra">ID de Compra a Anular:</label>
-        <input type="number" id="id_compra" name="id_compra" required>
+        <label for="direccion">Dirección de envío:</label>
+        <input type="text" id="direccion" name="direccion" required>
         <input type="submit" value="Anular Compra">
     </form>
     <script>

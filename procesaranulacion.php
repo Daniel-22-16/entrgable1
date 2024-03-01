@@ -15,17 +15,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Obtener datos del formulario solo si están definidos
-    $idProducto = isset($_POST['id_producto']) ? $_POST['id_producto'] : '';
-    $cantidad = isset($_POST['cantidad']) ? $_POST['cantidad'] : '';
     $direccionEnvio = isset($_POST['direccion']) ? $_POST['direccion'] : '';
 
-    // Insertar datos en la base de datos
-    $sql = "INSERT INTO compras (id_producto, cantidad, direccion_envio) VALUES ('$producto', $cantidad, '$direccionEnvio')";
+    // Insertar datos en la tabla 'anulaciones'
+    $sql = "INSERT INTO anulaciones (direccion_envio) VALUES ('$direccionEnvio')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Compra realizada con éxito";
+        echo "Compra anulada con éxito";
     } else {
-        echo "Error al realizar la compra: " . $conn->error;
+        echo "Error al anular la compra: " . $conn->error;
     }
 
     // Cerrar conexión
