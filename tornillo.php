@@ -77,7 +77,7 @@
    </style>
 </head>
 <body>
-   <form action="procesar_registro.php" method="post" onsubmit="return validarFormulario()">
+   <form action="procesarregistro.php" method="post" onsubmit="return validarFormulario()">
      <h1>Registro en El Tornillo Feliz</h1>
      
      <label for="nombre">Nombre completo:</label>
